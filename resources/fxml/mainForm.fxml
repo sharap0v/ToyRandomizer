@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="330.0" minWidth="600.0" prefHeight="330.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainFormController">
+   <children>
+      <VBox layoutX="236.0" layoutY="166.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="toysPane" minHeight="300.0" minWidth="600.0" prefHeight="300.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="227.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openAddToyForm" prefHeight="20.0" prefWidth="80.0" text="Add Toy" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#play" prefHeight="20.0" prefWidth="80.0" text="Play" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+<!--                  <Button mnemonicParsing="false" onAction="#save" prefHeight="20.0" prefWidth="80.0" text="Save">-->
+<!--                     <HBox.margin>-->
+<!--                        <Insets left="20.0" right="20.0" />-->
+<!--                     </HBox.margin>-->
+<!--                  </Button>-->
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

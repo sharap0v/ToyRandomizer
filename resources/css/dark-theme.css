@@ -1,0 +1,88 @@
+.root {
+    /*-fx-background-color: rgb(60, 60, 65);*/
+    -fx-background-color: rgb(45, 45, 50), rgb(60, 60, 65);
+    -fx-base: rgb(60, 60, 65);;
+    -fx-accent: #e7eff7 ;
+    -fx-default-button: #7f878f ;
+    -fx-focus-color: #efefef;
+    -fx-faint-focus-color: #efefef22;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+    );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;
+    -fx-border-radius: 9;
+    -fx-background-radius: 9;
+    /*-fx-background-color: rgb(45, 45, 50), rgb(60, 60, 65);*/
+    -fx-background-insets: 0, 0 1 1 0;
+}
+
+.checkBox {
+    /* default properties */
+    selected-box-color: black;
+    box-color: black;
+    mark-color: white;
+}
+
+.checkBox:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: rgb(47,112,203);
+}
+
+.checkBox > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: rgb(100, 100, 100);
+}
+
+.checkBox:selected > .box > .mark,
+.checkBox:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-prompt-text-fill: gray;
+    /*-fx-border-color: white;*/
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-background-color: rgb(72,72,72) , rgb(72,72,72) , rgb(72,72,72);
+    -fx-background-insets: 1 1 1 1, 2 2 2 2, 3 3 3 3;
+}
+
+.text-field:focused {
+    -fx-background-color: rgb(64,113,153) , rgb(64,113,153) , rgb(72,72,72);
+    -fx-background-insets: -2 -2 -2 -2, 2 2 2 2, 3 3 3 3;
+}
+
+.text-field {
+    -fx-prompt-text-fill: gray;
+    /*-fx-border-color: white;*/
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-background-color: rgb(72,72,72) , rgb(72,72,72) , rgb(72,72,72);
+    -fx-background-insets: 1 1 1 1, 2 2 2 2, 3 3 3 3;
+}
+
+.text-field:focused {
+    -fx-background-color: rgb(64,113,153) , rgb(64,113,153) , rgb(72,72,72);
+    -fx-background-insets: -2 -2 -2 -2, 2 2 2 2, 3 3 3 3;
+}
+
+.button {
+    /*-fx-graphic: url('icons/sun.png');*/
+    -fx-background-color: rgb(95, 96, 96);
+    -fx-text-fill: white
+}
+
+.buttonRead {
+    /*-fx-graphic: url('icons/sun.png');*/
+    -fx-background-color: rgb(200, 96, 96);
+    -fx-text-fill: white
+}
+
+
